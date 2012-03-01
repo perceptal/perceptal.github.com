@@ -1,0 +1,24 @@
+ul {
+    background-color: #CCD7E1;
+    font-size: 14px;
+    font-weight: 600;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    z-index: 10000;
+}
+
+ul li {
+    display: inline;
+    line-height: 25px;
+    padding: 0 6px;
+}
+
+a {
+    color: #2281D1;
+    text-decoration: none;
+}
