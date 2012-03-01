@@ -1,24 +1,74 @@
-ul {
-    background-color: #CCD7E1;
-    font-size: 14px;
-    font-weight: 600;
-    height: 25px;
-    margin: 0;
-    padding: 0;
+#fadeout {
+    z-index: 50;
     position: fixed;
-    text-align: center;
-    top: 0px;
-    width: 100%;
-    z-index: 10000;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
-ul li {
+header {
+    position: fixed;
+    z-index: 100;
+    height: 50px;
+    min-width: 490px;
+    left: 40px;
+    right: 40px;
+    top: 25px;
+    padding-left: 252px;
+    background: #EEE;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#DADADA));
+    background: -moz-linear-gradient(top, #F8F8F8, #DADADA);
+    border: 1px solid #AAA;
+    border-top: 1px solid #BBB;
+    border-bottom: 1px solid #888;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    display: block;
+    width: 225px;
+    height: 50px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 20px;
+}
+
+header ul {
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    position: relative;
+    float: left;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+header ul li {
     display: inline;
-    line-height: 25px;
     padding: 0 6px;
 }
 
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a.selected {
+    color: #c00;
+}
+
+.container {
+    padding: 100px 0 0 60px;
+}
+
 a {
-    color: #2281D1;
     text-decoration: none;
 }

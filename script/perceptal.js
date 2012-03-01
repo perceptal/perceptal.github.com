@@ -7,7 +7,7 @@
       target = $('a[name=' + anchor + ']');
       ran = false;
       $('html, body').animate({
-        scrollTop: target.offset().top - 60
+        scrollTop: target.offset().top - 100
       }, 400, function() {
         var offset;
         if (!ran) {
@@ -35,7 +35,7 @@
       anchor_index = null;
       scroll_y = this.scrollY;
       $.each(positions, function(i, item) {
-        if (scroll_y >= item - 70) {
+        if (scroll_y >= item - 110) {
           anchor_index = i;
           return false;
         }
@@ -44,7 +44,7 @@
         $(anchor_links).removeClass('selected');
         $(anchor_links[anchor_index]).addClass('selected');
       }
-      if (scroll_y < positions[positions.length - 1] - 70) {
+      if (scroll_y < positions[positions.length - 1] - 110) {
         return $(anchor_links).removeClass('selected');
       }
     };
