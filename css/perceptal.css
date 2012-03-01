@@ -16,11 +16,11 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background: #eee;
-    border-bottom: 1px solid #ccc;
-    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    background: #ddd;
+    border-bottom: 1px solid #aaa;
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 
 header h1 {
@@ -38,7 +38,7 @@ header ul {
     position: absolute;
     height: 50px;
     left: 250px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 50px;
     padding: 0 20px;
     cursor: pointer;
@@ -52,16 +52,21 @@ header ul li {
 header ul li a {
     text-decoration: none;
     padding: 6px;
-    border: 1px solid #eee;
+    border: 1px solid transparent;
+}
+
+header ul li a.selected, header ul li a:hover {
+    background: #eee;
+    color: #000;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 header ul li a.selected {
     background: #fff;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-
+    color: #900;
 }
 
 .container {
