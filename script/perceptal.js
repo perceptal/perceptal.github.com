@@ -1,6 +1,5 @@
 (function() {
-  var highlightNav, smoothScroll;
-  smoothScroll = function() {
+  var smoothScroll = function() {
     return $('a[href*=#]').click(function() {
       var anchor, ran, target;
       anchor = $(this).attr('href').match(/#(.*)/)[1];
@@ -15,14 +14,15 @@
           location.hash = anchor;
           this.scrollTop = offset;
         }
-        return ran = true;
+        return ran == true;
       });
       return false;
     });
   };
-  highlightNav = function() {
+
+  var highlightNav = function() {
     var anchor_links, anchors, positions, scrollHappened;
-    anchors = $('h2 a[name]');
+    anchors = $('h1 a[name], h2 a[name]');
     anchor_links = $('ul a');
     positions = anchors.map(function(i, item) {
       return $(item).offset().top;
@@ -35,7 +35,7 @@
       anchor_index = null;
       scroll_y = this.scrollY;
       $.each(positions, function(i, item) {
-        if (scroll_y >= item - 80) {
+        if (scroll_y >= item - 60) {
           anchor_index = i;
           return false;
         }
@@ -44,7 +44,7 @@
         $(anchor_links).removeClass('selected');
         $(anchor_links[anchor_index]).addClass('selected');
       }
-      if (scroll_y < positions[positions.length - 1] - 80) {
+      if (scroll_y < positions[positions.length - 1] - 60) {
         return $(anchor_links).removeClass('selected');
       }
     };
