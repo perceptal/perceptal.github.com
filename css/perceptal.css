@@ -235,6 +235,10 @@ a#rss {
   text-align: justify;
 }
 
+#main #contact {
+  margin-bottom: 400px;
+}
+
 @media all and (max-width: 1060px) {
   #sidebar {
     position: static;
