@@ -254,17 +254,16 @@ a#rss {
   }
   
   #sidebar nav {
-    width: auto;
     padding-top: 20px;
   }
   
-	#sidebar nav ul {
+  #sidebar nav ul {
     overflow: hidden;
   }
 
   #sidebar nav li {
     float: left;
-    width: 48%;
+    width: 32%;
   }
 
   #main {
