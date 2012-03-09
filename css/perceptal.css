@@ -254,7 +254,8 @@ a#rss {
   }
   
   #sidebar nav {
-    padding: 20px 0 0 0;
+    padding: 0;
+    margin: 0;
   }
   
   #sidebar nav ul {
