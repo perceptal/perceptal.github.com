@@ -249,7 +249,8 @@ a#rss {
 
 @media all and (max-width: 1060px) {
   #sidebar {
-    position: static
+    position: static;
+    margin-left: 0;
   }
   
   #sidebar nav {
