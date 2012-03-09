@@ -205,6 +205,22 @@ a#rss {
   line-height: 25px;
 }
 
+#main h1 span {
+  display: block;
+  margin: 10px 0 0 0;
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#main h2 span {
+  display: block;
+  margin: 10px 0 0 0;
+  color: #333;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
 #main #home {
   position: relative;
   top: 20px;
@@ -217,14 +233,6 @@ a#rss {
 #main #home h1 {
   margin-bottom: 45px;
   padding-top: 24px;
-}
-
-#main #home h1 span {
-  display: block;
-  margin: 10px 0 0 0;
-  color: #333;
-  font-size: 20px;
-  letter-spacing: 2px;
 }
 
 #main #home p {
