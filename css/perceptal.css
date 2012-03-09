@@ -255,6 +255,7 @@ a#rss {
   
   #sidebar nav {
     padding: 20px 0 0 0;
+    text-align: left;
   }
   
   #sidebar nav ul {
