@@ -263,12 +263,16 @@ a#rss {
 
   #sidebar nav li {
     float: left;
-    width: 33%;
+    width: 48%;
   }
 
   #sidebar nav a {
     padding-left: 0;
   }
+  
+  #sidebar #subscribe {
+    margin-left: 0;
+  } 
   
   #main {
     margin: 0 auto;
