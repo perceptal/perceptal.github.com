@@ -286,7 +286,7 @@ a#rss {
     margin: 0 auto;
   }
   
-  #main #home h1 {
-  
+  #main #home h1, #main #blog h1 {
+    margin-bottom: 10px;
   }
 }
