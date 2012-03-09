@@ -250,16 +250,15 @@ a#rss {
 @media all and (max-width: 1060px) {
   #sidebar {
     position: static;
-    width: 500px;
-    margin: 0 auto;
+    margin: 20px 0 20px 60px;
   }
   
-	#sidebar nav {
+  #sidebar nav {
     width: auto;
     padding-top: 20px;
   }
   
-	#sidebar nav ol {
+	#sidebar nav ul {
     overflow: hidden;
   }
 
@@ -269,6 +268,6 @@ a#rss {
   }
 
   #main {
-    margin: 0 auto;
+    margin: 20px 0 20px 60px;
   }
 }
