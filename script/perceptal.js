@@ -6,7 +6,7 @@
       target = $('a[name=' + anchor + ']');
       ran = false;
       $('html, body').animate({
-        scrollTop: target.offset().top - 70
+        scrollTop: target.offset().top - 75
       }, 400, function() {
         var offset;
         if (!ran) {
