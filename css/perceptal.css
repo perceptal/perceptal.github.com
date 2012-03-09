@@ -250,7 +250,7 @@ a#rss {
 @media all and (max-width: 1060px) {
   #sidebar {
     position: static;
-    margin: 20px 0 20px 60px;
+    margin: 0 auto;
   }
   
   #sidebar nav {
@@ -263,10 +263,10 @@ a#rss {
 
   #sidebar nav li {
     float: left;
-    width: 32%;
+    width: 48%;
   }
 
   #main {
-    margin: 20px 0 20px 60px;
+    margin: 0 auto;
   }
 }
